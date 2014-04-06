@@ -12,7 +12,7 @@
 # program should then print out the final series of numbers using 'F' for fizz,
 # 'B' for 'buzz' and 'FB' for fizz buzz.
 
-def replace_fizz_buzz fizz, buzz, end_number
+def replace_fizz_buzz fizz=3, buzz=5, end_number=100
   return (1..end_number).map do |x|
     s = ''
     s << 'F' if (x % fizz).zero?
