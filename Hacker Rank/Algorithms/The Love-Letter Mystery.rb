@@ -1,7 +1,7 @@
 #https://www.hackerrank.com/challenges/the-love-letter-mystery
 tc = gets.to_i
 tc.times{
-    arr = gets.chomp.split("").map(&:ord)
+    arr = gets.chomp.each_char.map(&:ord)
     count = 0
     start,finish = 0, arr.size-1
     while start < finish
